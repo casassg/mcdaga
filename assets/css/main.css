@@ -3833,5 +3833,15 @@
 		padding-top: 60px;
 	}
 
+	.clickable {
+		cursor: pointer;
+	}
+
+		.clickable:hover {
+			filter: brightness(120%);
+		}
 
 
+	.icon-intro {
+		text-decoration: none;
+	}
