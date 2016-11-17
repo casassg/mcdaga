@@ -1,5 +1,10 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@font-face {
+    font-family: Cosmonaut;
+    src: url(/assets/fonts/Cosmonaut.ttf);
+}
+
 
 /*
 	Spectral by HTML5 UP
@@ -3812,3 +3817,14 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	/* Custom */
+
+	.coolfont {
+		font-family: Cosmonaut, "Open Sans", Helvetica, sans-serif;
+	}
+
+	.bigtext {
+		font-size: 100px;
+	}
+
