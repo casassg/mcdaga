@@ -3820,7 +3820,7 @@
 
 	/* Custom */
 
-	.coolfont {
+	.coolfont, h1, h2 {
 		font-family: Cosmonaut, "Open Sans", Helvetica, sans-serif;
 	}
 
@@ -3828,4 +3828,6 @@
 		font-size: 100px;
 		padding-top: 60px;
 	}
+
+
 
