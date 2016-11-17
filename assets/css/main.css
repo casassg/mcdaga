@@ -3411,7 +3411,7 @@
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 1.75em;
+			font-size: 3em;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
@@ -3822,6 +3822,10 @@
 
 	.coolfont, h1 {
 		font-family: Cosmonaut, "Open Sans", Helvetica, sans-serif;
+	}
+
+	.title-text {
+		font-size: 40px;
 	}
 
 	.bigtext {
