@@ -3401,6 +3401,18 @@
 		text-align: center;
 	}
 
+		#banner video {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+			background-size: cover;
+		}
+
 		#banner h2 {
 			-moz-transform: scale(1);
 			-webkit-transform: scale(1);
@@ -3416,6 +3428,10 @@
 			padding: 0.35em 1em;
 			position: relative;
 			z-index: 1;
+		}
+
+		#banner .inner {
+			z-index: 50;
 		}
 
 			#banner h2:before, #banner h2:after {
