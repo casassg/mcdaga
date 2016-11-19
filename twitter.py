@@ -61,7 +61,7 @@ def search_tag(tag_name):
 
         arrayTweets.append(twet)
 
-    json_data = json.dumps(arrayTweets)
+    json_data = json.dumps(list(reversed(arrayTweets)))
     f = open("data.json", "w")
     f.write(json_data)
     f.close()
