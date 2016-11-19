@@ -32,10 +32,6 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
-img {
-  max-width: 100%;
-}
-
 h1, h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -307,8 +303,6 @@ header h1 {
   color: #303e49;
   text-align: right;
 }
-
-.img
 
 .p{
   background-color: aliceblue;
