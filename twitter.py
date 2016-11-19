@@ -48,6 +48,7 @@ def search_tag(tag_name):
         twet['time'] = "Date: " + time[0] + " Time: " + time[1]
         print twet['time']
         twet['text'] = tweet.text
+        twet['author'] = tweet.user.name
         twet['rt'] = tweet.retweet_count
         twet['fav'] = tweet.favorite_count
         twet['imurl'] = 'null'
@@ -60,7 +61,7 @@ def search_tag(tag_name):
 
         arrayTweets.append(twet)
 
-    json_data = json.dumps(list(reversed(arrayTweets)))
+    json_data = json.dumps(arrayTweets)
     f = open("data.json", "w")
     f.write(json_data)
     f.close()
