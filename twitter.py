@@ -36,7 +36,7 @@ def index():
 
 
 def search_tag(tag_name):
-    cricTweet = tweepy.Cursor(api.search, q=tag_name, result_type='mixed').items(10)  # nombre de tweets a treure
+    cricTweet = tweepy.Cursor(api.search, q=tag_name, result_type='mixed').items(1000)  # nombre de tweets a treure
 
     arrayTweets = []
 
@@ -54,13 +54,13 @@ def search_tag(tag_name):
         if 'media' in tweet.entities:
             media = tweet.entities['media'][0]
             im_url = media['media_url']
-            filename = str(media['id']) + '.jpg'
+            filename = str(media['id']) + '.gif'
             twet['imurl'] = im_url
             urllib.urlretrieve(im_url, "./tweet_photos/" + filename)
 
         arrayTweets.append(twet)
 
-    json_data = json.dumps(arrayTweets)
+    json_data = json.dumps(list(reversed(arrayTweets)))
     f = open("data.json", "w")
     f.write(json_data)
     f.close()
